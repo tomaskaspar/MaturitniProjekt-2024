@@ -1,1 +1,58 @@
-ssadsadsadasdsad
+#define IN1 7
+#define IN2 6
+
+#define IN3 11
+#define IN4 12
+
+void TurnMotorAForward(){
+ digitalWrite(IN1, HIGH);
+ digitalWrite(IN2, LOW);
+
+ digitalWrite(IN3, HIGH);
+ digitalWrite(IN4, LOW);
+
+  analogWrite(8, 225);
+ analogWrite(13, 225);
+
+  
+}
+
+
+
+void TurnOFFMotorA(){
+ digitalWrite(IN1, LOW);
+ digitalWrite(IN2, LOW);
+
+ digitalWrite(IN3, LOW);
+ digitalWrite(IN4, LOW);
+ 
+}
+void TurnMotorABackward(){
+ digitalWrite(IN1, LOW);
+ digitalWrite(IN2, HIGH);
+ 
+ digitalWrite(IN3, LOW);
+ digitalWrite(IN4, HIGH);
+ 
+ analogWrite(8, 225);
+ analogWrite(13, 225);
+ 
+}
+void setup() {
+ pinMode(IN1, OUTPUT);
+ pinMode(8, OUTPUT);
+ pinMode(13, OUTPUT);
+ pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+   pinMode(IN4, OUTPUT);
+}
+void loop() {
+ TurnMotorAForward(); // We turn to direction 1 for 3s then stop for 2s
+ delay(4000);
+ TurnOFFMotorA();
+ delay(2000);
+ TurnMotorABackward(); // We turn to direction 2 for 3s then stop for 2s
+ delay(4000);
+ TurnOFFMotorA();
+ delay(2000);
+}

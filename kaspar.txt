@@ -1,3 +1,4 @@
-Vystaveno pro	Vystavitel	Datum ukonèení platnosti	Zamıšlené úèely	Popisnı název	Stav	Šablona certifikátu
-48c42ce7-5ee3-484b-870c-bcf0ef7e94e9	MS-Organization-Access	23.09.2034	Ovìøení klienta	<ádnı>	    	
-AMG Tomáš Kašpar GMA	I.CA Test Public CA/RSA 04/2022	23.10.2024	Ovìøení klienta, Zabezpeèení e-mailu	<ádnı>	    	
+Vystaveno pro	Vystavitel	Datum ukonÄenÃ­ platnosti	ZamÃ½Å¡lenÃ© ÃºÄely	PopisnÃ½ nÃ¡zev	Stav	Å ablona certifikÃ¡tu
+48c42ce7-5ee3-484b-870c-bcf0ef7e94e9	MS-Organization-Access	23.09.2034	OvÄ›Å™enÃ­ klienta	<Å½Ã¡dnÃ½>	    	
+AMG TomÃ¡Å¡ KaÅ¡par GMA	I.CA Test Public CA/RSA 04/2022	23.10.2024	OvÄ›Å™enÃ­ klienta, ZabezpeÄenÃ­ e-mailu	<Å½Ã¡dnÃ½>	    	
+fddfsfd

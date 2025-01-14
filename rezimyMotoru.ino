@@ -140,7 +140,7 @@ analogWrite(enAA, max(motorSpeed - 30, 0));
 
 // Funkce pro opačný směr motoru 2
 void reverseMotor2() {
-    Serial.println("Motor 2 opačný směr");
+    Serial.println("Rotace dolu,levy motor z pohledu kratsi strany");
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
   digitalWrite(in3, LOW);

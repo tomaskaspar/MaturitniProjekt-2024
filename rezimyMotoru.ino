@@ -87,11 +87,11 @@ void loop() {
 }
 
 void sameDirection() {
-  Serial.println("Motory se točí stejným směrem");
+  Serial.println("Bez rotace");
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
   analogWrite(enA, motorSpeed);
   analogWrite(enAA, motorSpeed);
   Serial.print("motorSpeed: ");
@@ -99,25 +99,25 @@ void sameDirection() {
 }
 
 void reverseMotor1() {
-  Serial.println("Motor 1 opačný směr");
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  analogWrite(enA, motorSpeed);
-  analogWrite(enAA, max(motorSpeed - 30, 40));
+  Serial.println("Zpětná rotace");
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  analogWrite(enA, max(motorSpeed - 50, 40));
+  analogWrite(enAA, motorSpeed);
   Serial.print("motorSpeed: ");
   Serial.println(motorSpeed);
 }
 
 void reverseMotor2() {
-  Serial.println("Rotace dolů, levý motor z pohledu kratší strany");
+   Serial.println("Rotace v před");
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
-  analogWrite(enA, max(motorSpeed - 30, 40));
-  analogWrite(enAA, motorSpeed);
+  analogWrite(enA, motorSpeed);
+  analogWrite(enAA, max(motorSpeed - 50, 40));
   Serial.print("motorSpeed: ");
   Serial.println(motorSpeed);
 }

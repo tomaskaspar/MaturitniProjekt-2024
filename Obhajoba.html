@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Obhajoba.css" />
+    <title>Pingpongový Trenažér</title>
+</head>
+<body>
+    <!-- Úvodní Sekce -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo-removebg-preview__1_-removebg-preview.png" alt="Logo" /> <!-- Nahraďte logo.png skutečným názvem souboru loga -->
+            </div>
+            <div class="header-text">
+                <h1>Pingpongový Trenažér</h1>
+                <p>Vylepši své schopnosti s naším trenažérem!</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#uvod">Úvod</a></li>
+                <li><a href="#text">Textová Sekce</a></li>
+                <li><a href="#parametry">Parametry</a></li>
+                <li><a href="#obrazky">Galerie</a></li>
+                <li><a href="#kombinovana-sekce">Text s Obrázkem</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+    
+     <!-- Sekce Plakát -->
+        <section id="plakat">
+            <div class="container">
+                <h2>Plakát projektu</h2>
+                <br>
+                <img src="plakat projekt (1).png" alt="Plakát projektu" height="701" width="496px" />
+                
+            </div>
+        </section>
+        
+        <!-- Úvodní Sekce -->
+        <section id="uvod" class="intro">
+            <div class="container">
+                <h2>Úvod</h2>
+                <p>Naším cílem je vytvořit pingpongový trenažér, který bude umožňovat hráčům se neustále zlepšovat.</p>
+            </div>
+        </section>
+
+        <!-- Textová Sekce -->
+        <section id="text" class="text-section">
+            <div class="container">
+                <h2>Popis Projektu</h2>
+                <p><b>Z čeho se bude skládat:</b><br>
+                Celý projekt bude pohánět Bateriový zdroj. Zdroj bude umístěn v krabici, ve které bude schována většina kabelů.</p>
+                
+                <p><b>Popis funkčnosti:</b><br>
+                Do děr v dávkovači spadnou vsypané míčky, a jak bude kolo rotovat okolo své osy, míčky postupně dojdou do vymršťovacího mechanizmu.</p>
+            </div>
+        </section>
+
+        <!-- data Sekce -->
+        <section id="parametry" class="parameters-section">
+            <div class="container">
+                <h2>Technické Parametry</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parametr</th>
+                            <th>Hodnota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maximální rychlost výstřelu</td>
+                            <td>30-50 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Maximální chod míčku</td>
+                            <td>1 míček/2s</td>
+                        </tr>
+                        <tr>
+                            <td>Kapacita zásobníku</td>
+                            <td>105 míčků</td>
+                        </tr>
+                        <tr>
+                            <td>Spotřeba energie</td>
+                            <td>11 W</td>
+                        </tr>
+                        <tr>
+                            <td>Hmotnost zařízení</td>
+                            <td>5 kg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Galerie Obrázků -->
+        <section id="obrazky" class="gallery-section">
+            <div class="container">
+                <h2>Galerie Obrázků</h2>
+                <div class="gallery">
+                    <img src="schemaZapojeni.png" alt="obrázek 1">
+                    <img src="seznamSoucastek.png" alt="obrázek 9">
+                    <img src="IMG_0405.JPEG" alt="obrázek 2">
+                    <img src="IMG_0406.JPEG" alt="obrázek 3">
+                    <img src="IMG_0928.JPEG" alt="obrázek 4">
+                    <img src="B14211CA-7670-459D-9278-78E4EE66AE50.jpeg" alt="obrázek 5">
+                    <img src="DRZAKmotory.png" alt="obrázek 6">
+                     <img src="nakresDrzakMotoruu.jpg" alt="obrázek 12"width="550">
+                    <img src="KOLO.png" alt=" obrázek 7">
+                    <img src="kolecko.png" alt=" obrázek 8">
+                    <img src="nosicNaMotor.png" alt=" obrázek 11">
+                    <img src="schema zapojeni.png" alt="obrázek 12">
+                    <img src="finalVSprototip.png" alt="obrázek 10">
+                    <img src="VypocetMaxRychlosti.png" alt="obrázek 13">
+                    <img src="IMG_1634.jpeg" alt="obrázek 14">
+                    <img src="IMG_1967.jpeg" alt="obrázek 15">
+                      <video autoplay loop muted width="650" height="450" src="c14be71300f545ae934134d4898659fa.mov">
+                </div>
+            </div>
+        </section>
+
+        <!-- Text s Obrázkem -->
+        <section id="kombinovana-sekce" class="text-image-section">
+            <div class="container">
+                <h2>Popis částí projektu</h2>
+                <div class="text-image">
+                    <img src="2.nákres.jpg" alt="Obrázek">
+                    <div class="textUObrazku">
+                        <ul>
+                            <li>1. Nádoba s míčky</li>
+                            <li>2. Míček</li>
+                            <li>3. Motory</li>
+                            <li>4. H-můstek</li>
+                            <li>5. Arduino</li>
+                            <li>6. PVC Trubky</li>
+                            <li>7. Platforma s výřezy na míčky</li>
+                            <li>8. Tyč, která otáčí platformou</li>
+                            <li>9. Úschovna zapojení</li>
+                            <li>10. Bateriový zdroj</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontakt">
+        <div class="container">
+            <h2>Zpracovali</h2>
+            <p>Kašpar, Kašpárek</p>
+        </div>
+    </footer>
+</body>
+</html>
